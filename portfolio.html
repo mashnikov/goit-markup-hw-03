@@ -17,28 +17,30 @@
   <body class="page">
     <!-- шапка сайта -->
     <header>
-      <div class="container">
-        <nav>
+      <div class="container page-header">
+        <nav class="main-nav">
           <a href="./index.html" class="logo" lang="en">
             <span class="logo-active">Web</span> Studio</a
           >
           <ul class="list site-nav">
-            <li><a href="./index.html" class="link">Студия</a></li>
-            <li>
+            <li class="site-nav-item">
+              <a href="./index.html" class="link">Студия</a>
+            </li>
+            <li class="site-nav-item">
               <a href="./portfolio.html" class="link current">Портфолио</a>
             </li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="site-nav-item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="list authorization-nav">
-          <li>
+          <li class="auth-nav-item">
             <address>
               <a href="mailto:info@devstudio.com" class="link"
                 >info@devstudio.com</a
               >
             </address>
           </li>
-          <li>
+          <li class="auth-nav-item">
             <address>
               <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
             </address>
@@ -51,15 +53,25 @@
         <!-- перечень выполенных проектов -->
         <div class="container">
           <h1 hidden>Выполненные проекты</h1>
-          <ul class="list">
-            <li><button class="button" type="button">Все</button></li>
-            <li><button class="button" type="button">Веб-сайты</button></li>
-            <li><button class="button" type="button">Приложения</button></li>
-            <li><button class="button" type="button">Дизайн</button></li>
-            <li><button class="button" type="button">Маркетинг</button></li>
+          <ul class="list button-list">
+            <li class="button-item">
+              <button class="button" type="button">Все</button>
+            </li>
+            <li class="button-item">
+              <button class="button" type="button">Веб-сайты</button>
+            </li>
+            <li class="button-item">
+              <button class="button" type="button">Приложения</button>
+            </li>
+            <li class="button-item">
+              <button class="button" type="button">Дизайн</button>
+            </li>
+            <li class="button-item">
+              <button class="button" type="button">Маркетинг</button>
+            </li>
           </ul>
           <ul class="list portfolio">
-            <li>
+            <li class="portfolio-list-item">
               <a href="" class="link">
                 <img
                   src="./images/portfolio-projects/project-1.jpg"
@@ -73,13 +85,16 @@
                   <p class="text">Веб-сайт</p>
                   <p class="text-hidden">
                     Технокряк это современная площадка распространения
-                    коронавируса. Компании используют эту платформу для
-                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                    коронавируса.
+                    <span hidden
+                      >Компании используют эту платформу для цифрового шпионажа
+                      и атак на защищённые сервера конкурентов.</span
+                    >
                   </p>
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <a href="" class="link">
                 <img
                   src="./images/portfolio-projects/project-2.jpg"
@@ -100,7 +115,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <a href="" class="link">
                 <img
                   src="./images/portfolio-projects/project-3.jpg"
@@ -119,7 +134,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <a href="" class="link">
                 <img
                   src="./images/portfolio-projects/project-4.jpg"
@@ -138,7 +153,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <a href="" class="link">
                 <img
                   src="./images/portfolio-projects/project-5.jpg"
@@ -157,7 +172,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <a href="" class="link">
                 <img
                   src="./images/portfolio-projects/project-6.jpg"
@@ -176,7 +191,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <a href="" class="link">
                 <img
                   src="./images/portfolio-projects/project-7.jpg"
@@ -197,7 +212,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <a href="" class="link">
                 <img
                   src="./images/portfolio-projects/project-8.jpg"
@@ -216,7 +231,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <a href="" class="link">
                 <img
                   src="./images/portfolio-projects/project-9.jpg"
@@ -240,66 +255,68 @@
       </section>
     </main>
     <footer class="footer">
-      <!-- подвал-адрес и контакты -->
       <div class="container">
+        <!-- подвал-адрес и контакты -->
         <h2 hidden>Адрес, контакты, обратная связь</h2>
-        <div>
-          <a href="./index.html" class="logo" lang="en">
-            <span class="logo-active">Web</span> Studio</a
-          >
-          <address>
-            <ul class="list adress-links">
-              <li class="footer-link-item">
-                <a
-                  href="https://goo.gl/maps/h3NakL3rMjCTocCM8"
-                  class="link map"
-                  target="_blank"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="main-container">
+          <div class="contacts-container">
+            <a href="./index.html" class="logo" lang="en">
+              <span class="logo-active">Web</span> Studio</a
+            >
+            <address>
+              <ul class="list adress-links">
+                <li class="footer-link-item">
+                  <a
+                    href="https://goo.gl/maps/h3NakL3rMjCTocCM8"
+                    class="link map"
+                    target="_blank"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer-link-item">
+                  <a href="mailto:info@devstudio.com" class="link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-link-item">
+                  <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social-links-container">
+            <b class="text">присоединяйтесь</b>
+            <ul class="list social-link-list">
+              <li>
+                <a href="" class="social-link" aria-label="иконка инстаграма">
+                  <img
+                    src="./images/our-team/social/instagram.svg"
+                    alt="иконка инстаграма"
+                /></a>
               </li>
-              <li class="footer-link-item">
-                <a href="mailto:info@devstudio.com" class="link"
-                  >info@devstudio.com</a
-                >
+              <li>
+                <a href="" class="social-link" aria-label="иконка твиттера">
+                  <img
+                    src="./images/our-team/social/twitter.svg"
+                    alt="иконка твиттера"
+                /></a>
               </li>
-              <li class="footer-link-item">
-                <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+              <li>
+                <a href="" class="social-link" aria-label="иконка фейсбука">
+                  <img
+                    src="./images/our-team/social/facebook.svg"
+                    alt="иконка фейсбука"
+                /></a>
+              </li>
+              <li>
+                <a href="" class="social-link" aria-label="иконка линкедина">
+                  <img
+                    src="./images/our-team/social/linkedin.svg"
+                    alt="иконка линкедина"
+                /></a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div>
-          <b class="text">присоединяйтесь</b>
-          <ul class="list">
-            <li>
-              <a href="" class="social-link" aria-label="иконка инстаграма">
-                <img
-                  src="./images/our-team/social/instagram.svg"
-                  alt="иконка инстаграма"
-              /></a>
-            </li>
-            <li>
-              <a href="" class="social-link" aria-label="иконка твиттера">
-                <img
-                  src="./images/our-team/social/twitter.svg"
-                  alt="иконка твиттера"
-              /></a>
-            </li>
-            <li>
-              <a href="" class="social-link" aria-label="иконка фейсбука">
-                <img
-                  src="./images/our-team/social/facebook.svg"
-                  alt="иконка фейсбука"
-              /></a>
-            </li>
-            <li>
-              <a href="" class="social-link" aria-label="иконка линкедина">
-                <img
-                  src="./images/our-team/social/linkedin.svg"
-                  alt="иконка линкедина"
-              /></a>
-            </li>
-          </ul>
+          </div>
         </div>
       </div>
     </footer>

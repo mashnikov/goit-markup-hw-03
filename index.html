@@ -17,28 +17,30 @@
   <body class="page">
     <!-- шапка сайта -->
     <header>
-      <div class="container">
-        <nav>
+      <div class="container page-header">
+        <nav class="main-nav">
           <a href="./index.html" class="logo" lang="en">
             <span class="logo-active">Web</span> Studio</a
           >
           <ul class="list site-nav">
-            <li><a href="./index.html" class="link current">Студия</a></li>
-            <li>
+            <li class="site-nav-item">
+              <a href="./index.html" class="link current">Студия</a>
+            </li>
+            <li class="site-nav-item">
               <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li class="site-nav-item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="list authorization-nav">
-          <li>
+          <li class="auth-nav-item">
             <address>
               <a href="mailto:info@devstudio.com" class="link"
                 >info@devstudio.com</a
               >
             </address>
           </li>
-          <li>
+          <li class="auth-nav-item">
             <address>
               <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
             </address>
@@ -116,7 +118,7 @@
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list">
-            <li>
+            <li class="item">
               <img
                 src="./images/what-we-do/desktop.jpg"
                 class="what-we-do-image"
@@ -126,7 +128,7 @@
               />
               <p class="text"><b>Десктопные приложения</b></p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/what-we-do/mobile.jpg"
                 class="what-we-do-image"
@@ -136,7 +138,7 @@
               />
               <p class="text"><b>Мобильные приложения</b></p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/what-we-do/design.jpg"
                 class="what-we-do-image"
@@ -153,7 +155,7 @@
       <section class="section our-team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="list">
+          <ul class="list members">
             <li class="list-item">
               <img
                 src="./images/our-team/teammates/teammate-1.jpg"
@@ -164,7 +166,7 @@
               />
               <h3 class="title">Николай Кучеренко</h3>
               <p class="position" lang="en">Product Designer</p>
-              <ul class="list">
+              <ul class="list social-link-list">
                 <li>
                   <a href="" class="social-link" aria-label="иконка инстаграма">
                     <img
@@ -205,7 +207,7 @@
               />
               <h3 class="title">Ольга Иванова</h3>
               <p class="position" lang="en">Frontend Developer</p>
-              <ul class="list">
+              <ul class="list social-link-list">
                 <li>
                   <a href="" class="social-link" aria-label="иконка инстаграма">
                     <img
@@ -246,7 +248,7 @@
               />
               <h3 class="title">Андрей Шевченко</h3>
               <p class="position" lang="en">Marketing</p>
-              <ul class="list">
+              <ul class="list social-link-list">
                 <li>
                   <a href="" class="social-link" aria-label="иконка инстаграма">
                     <img
@@ -287,7 +289,7 @@
               />
               <h3 class="title">Иван Николаев</h3>
               <p class="position" lang="en">UI Designer</p>
-              <ul class="list">
+              <ul class="list social-link-list">
                 <li>
                   <a href="" class="social-link" aria-label="иконка инстаграма">
                     <img
@@ -325,43 +327,43 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
-          <ul class="list">
-            <li>
+          <ul class="list clients-list">
+            <li class="item">
               <a href="" class="clients-link"
                 ><img
                   src="./images/clients/logo/logo-1.svg"
                   alt="логотип клиента"
               /></a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="clients-link"
                 ><img
                   src="./images/clients/logo/logo-2.svg"
                   alt="логотип клиента"
               /></a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="clients-link"
                 ><img
                   src="./images/clients/logo/logo-3.svg"
                   alt="логотип клиента"
               /></a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="clients-link"
                 ><img
                   src="./images/clients/logo/logo-4.svg"
                   alt="логотип клиента"
               /></a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="clients-link"
                 ><img
                   src="./images/clients/logo/logo-5.svg"
                   alt="логотип клиента"
               /></a>
             </li>
-            <li>
+            <li class="item">
               <a href="" class="clients-link"
                 ><img
                   src="./images/clients/logo/logo-6.svg"
@@ -376,63 +378,65 @@
       <div class="container">
         <!-- подвал-адрес и контакты -->
         <h2 hidden>Адрес, контакты, обратная связь</h2>
-        <div>
-          <a href="./index.html" class="logo" lang="en">
-            <span class="logo-active">Web</span> Studio</a
-          >
-          <address>
-            <ul class="list adress-links">
-              <li class="footer-link-item">
-                <a
-                  href="https://goo.gl/maps/h3NakL3rMjCTocCM8"
-                  class="link map"
-                  target="_blank"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="main-container">
+          <div class="contacts-container">
+            <a href="./index.html" class="logo" lang="en">
+              <span class="logo-active">Web</span> Studio</a
+            >
+            <address>
+              <ul class="list adress-links">
+                <li class="footer-link-item">
+                  <a
+                    href="https://goo.gl/maps/h3NakL3rMjCTocCM8"
+                    class="link map"
+                    target="_blank"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer-link-item">
+                  <a href="mailto:info@devstudio.com" class="link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-link-item">
+                  <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social-links-container">
+            <b class="text">присоединяйтесь</b>
+            <ul class="list social-link-list">
+              <li>
+                <a href="" class="social-link" aria-label="иконка инстаграма">
+                  <img
+                    src="./images/our-team/social/instagram.svg"
+                    alt="иконка инстаграма"
+                /></a>
               </li>
-              <li class="footer-link-item">
-                <a href="mailto:info@devstudio.com" class="link"
-                  >info@devstudio.com</a
-                >
+              <li>
+                <a href="" class="social-link" aria-label="иконка твиттера">
+                  <img
+                    src="./images/our-team/social/twitter.svg"
+                    alt="иконка твиттера"
+                /></a>
               </li>
-              <li class="footer-link-item">
-                <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+              <li>
+                <a href="" class="social-link" aria-label="иконка фейсбука">
+                  <img
+                    src="./images/our-team/social/facebook.svg"
+                    alt="иконка фейсбука"
+                /></a>
+              </li>
+              <li>
+                <a href="" class="social-link" aria-label="иконка линкедина">
+                  <img
+                    src="./images/our-team/social/linkedin.svg"
+                    alt="иконка линкедина"
+                /></a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div>
-          <b class="text">присоединяйтесь</b>
-          <ul class="list">
-            <li>
-              <a href="" class="social-link" aria-label="иконка инстаграма">
-                <img
-                  src="./images/our-team/social/instagram.svg"
-                  alt="иконка инстаграма"
-              /></a>
-            </li>
-            <li>
-              <a href="" class="social-link" aria-label="иконка твиттера">
-                <img
-                  src="./images/our-team/social/twitter.svg"
-                  alt="иконка твиттера"
-              /></a>
-            </li>
-            <li>
-              <a href="" class="social-link" aria-label="иконка фейсбука">
-                <img
-                  src="./images/our-team/social/facebook.svg"
-                  alt="иконка фейсбука"
-              /></a>
-            </li>
-            <li>
-              <a href="" class="social-link" aria-label="иконка линкедина">
-                <img
-                  src="./images/our-team/social/linkedin.svg"
-                  alt="иконка линкедина"
-              /></a>
-            </li>
-          </ul>
+          </div>
         </div>
       </div>
     </footer>
