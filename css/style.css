@@ -325,7 +325,17 @@
 }
 
 /* Стили для portfolio.html */
+
+.portfolio-section {
+  padding-top: 93px;
+}
+
 .button {
+  display: inline-block;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-width: 0px;
+
   color: var(--secondary-text-color);
   background-color: var(--secondary-background-color);
   font-weight: 500;
@@ -343,9 +353,23 @@
 
 .portfolio .link {
   text-decoration: none;
+  display: block;
+}
+
+.portfolio-project-image {
+  display: block;
+}
+
+.portfolio-project-content {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 
 .portfolio .title {
+  margin-top: 0;
+  margin-bottom: 4px;
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -354,12 +378,16 @@
 }
 
 .portfolio .text {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.87;
 }
 
 .portfolio .text-hidden {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--white-color);
   background-color: var(--portfolio-list-hidden-color);
   font-size: 18px;
